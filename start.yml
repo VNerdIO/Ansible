@@ -1,0 +1,9 @@
+---
+- hosts: servers
+  tasks:
+    - name: Ping
+      ping:
+    - name: Download a thing
+      get_url:
+        url: https://vnerd.io/wp-content/uploads/2018/01/dpst_1-300x289.png
+        dest: /tmp
